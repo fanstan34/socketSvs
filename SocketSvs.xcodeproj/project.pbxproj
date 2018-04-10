@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B936D5291FB698740047F271 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B936D5261FB6977A0047F271 /* GCDAsyncSocket.m */; };
+		B936D52A1FB698740047F271 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B936D5281FB6977A0047F271 /* GCDAsyncUdpSocket.m */; };
 		B9F57E3D1EA49B0F00FB463D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F57E3C1EA49B0F00FB463D /* AppDelegate.m */; };
 		B9F57E401EA49B0F00FB463D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F57E3F1EA49B0F00FB463D /* main.m */; };
 		B9F57E431EA49B0F00FB463D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F57E421EA49B0F00FB463D /* ViewController.m */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B936D5251FB6977A0047F271 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B936D5261FB6977A0047F271 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		B936D5271FB6977A0047F271 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		B936D5281FB6977A0047F271 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		B9F57E381EA49B0F00FB463D /* SocketSvs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketSvs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F57E3B1EA49B0F00FB463D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9F57E3C1EA49B0F00FB463D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B936D5231FB6977A0047F271 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				B936D5251FB6977A0047F271 /* GCDAsyncSocket.h */,
+				B936D5261FB6977A0047F271 /* GCDAsyncSocket.m */,
+				B936D5271FB6977A0047F271 /* GCDAsyncUdpSocket.h */,
+				B936D5281FB6977A0047F271 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		B9F57E2F1EA49B0F00FB463D = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +120,7 @@
 				B9F57E3C1EA49B0F00FB463D /* AppDelegate.m */,
 				B9F57E411EA49B0F00FB463D /* ViewController.h */,
 				B9F57E421EA49B0F00FB463D /* ViewController.m */,
+				B936D5231FB6977A0047F271 /* GCD */,
 				B9F57E441EA49B0F00FB463D /* Assets.xcassets */,
 				B9F57E461EA49B0F00FB463D /* Main.storyboard */,
 				B9F57E491EA49B0F00FB463D /* Info.plist */,
@@ -269,6 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B936D5291FB698740047F271 /* GCDAsyncSocket.m in Sources */,
+				B936D52A1FB698740047F271 /* GCDAsyncUdpSocket.m in Sources */,
 				B9F57E431EA49B0F00FB463D /* ViewController.m in Sources */,
 				B9F57E401EA49B0F00FB463D /* main.m in Sources */,
 				B9F57E3D1EA49B0F00FB463D /* AppDelegate.m in Sources */,
@@ -414,6 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vnetoo.SocketSvs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.13;
 			};
 			name = Debug;
 		};
@@ -426,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vnetoo.SocketSvs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.13;
 			};
 			name = Release;
 		};
@@ -498,6 +520,7 @@
 				B9F57E641EA49B0F00FB463D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9F57E651EA49B0F00FB463D /* Build configuration list for PBXNativeTarget "SocketSvsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				B9F57E671EA49B0F00FB463D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9F57E681EA49B0F00FB463D /* Build configuration list for PBXNativeTarget "SocketSvsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				B9F57E6A1EA49B0F00FB463D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
